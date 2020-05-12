@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="2dp"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="@color/colorWhite">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_default"/>
+        
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="karan"
+            android:textColor="@color/ColorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/avatarIv"/>
+
+        <TextView
+            android:id="@+id/commentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTv"
+            android:layout_toRightOf="@id/avatarIv"
+            android:textColor="@color/ColorBlack"
+            android:text="this is actual comment"
+            android:layout_toEndOf="@id/avatarIv"/>
+        
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05/04/2020"
+            android:layout_below="@id/commentTv"
+            android:layout_toEndOf="@id/avatarIv"
+            android:layout_toRightOf="@id/avatarIv"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

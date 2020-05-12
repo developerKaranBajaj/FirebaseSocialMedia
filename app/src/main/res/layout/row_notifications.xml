@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:contentPadding="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_default"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/ColorBlack"/>
+            
+            <TextView
+                android:id="@+id/notificationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textColor="@color/ColorBlack"/>
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textColor="@color/ColorBlack"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

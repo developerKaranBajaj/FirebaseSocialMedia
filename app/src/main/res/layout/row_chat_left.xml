@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/messageLayout"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileIv"
+            app:c_border_color="@null"
+            android:src="@drawable/ic_default" />
+
+            <TextView
+                android:id="@+id/messageTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver message"
+                android:background="@drawable/bg_receiver"
+                android:padding="15dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:textColor="@color/ColorBlack" />
+
+             <ImageView
+                 android:id="@+id/messageIv"
+                 android:layout_width="200dp"
+                 android:layout_height="200dp"
+                 android:adjustViewBounds="true"
+                 android:src="@drawable/ic_image_black"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/bg_receiver"/>
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/04/2020 10:27AM"
+                android:textColor="@color/ColorBlack"
+                android:textSize="12sp"/>
+
+
+        
+
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/isSeenTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:visibility="gone"
+        android:textAlignment="textEnd"
+        android:text="delivered"/>
+
+
+
+
+</LinearLayout>

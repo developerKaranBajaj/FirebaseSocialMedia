@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:contentPadding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/uPictureIv"
+                android:src="@drawable/ic_default"
+                android:scaleType="centerCrop"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/uNameIV"
+                    android:hint="Name"
+                    android:textSize="20sp"
+                    android:text="Name"
+                    android:textColor="@color/ColorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+                <TextView
+                    android:id="@+id/pTimeIV"
+                    android:text="33 min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            
+            <ImageButton
+                android:id="@+id/moreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_more_black"/>
+
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/pTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Title"
+            android:autoLink="all"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/pDescriptionTv"
+            android:textColor="@color/ColorBlack"
+            android:text="The description of post"
+            android:layout_width="match_parent"
+            android:autoLink="all"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/pImageIv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorWhite"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pLikesTv"
+                android:textColor="@color/colorPrimary"
+                android:text="1.2k likes"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/pCommentsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:text="1.2k Comment"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F0F0"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            
+            <Button
+                android:id="@+id/likeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_like_black"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_like_black"
+                android:background="@color/ColorWhite"
+                android:text="LIKE"/>
+
+            <Button
+                android:id="@+id/commentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_comment_black"
+                android:drawableStart="@drawable/ic_comment_black"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:background="@color/ColorWhite"
+                android:text="COMMENT"/>
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_share_black"
+                android:drawableStart="@drawable/ic_share_black"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:text="SHARE" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

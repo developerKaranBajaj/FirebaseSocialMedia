@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/messageLayout"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileIv"
+            android:visibility="gone"
+            app:c_border_color="@null"
+            android:src="@drawable/ic_default" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/04/2020 10:27AM"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiver message"
+            android:background="@drawable/bg_sender"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/timeTv"
+            android:layout_toRightOf="@id/timeTv"
+            android:textColor="@color/ColorBlack"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/messageIv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_image_black"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bg_sender"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/isSeenTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:text="delivered"/>
+
+
+
+
+</LinearLayout>
