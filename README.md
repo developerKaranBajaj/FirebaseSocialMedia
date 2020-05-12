@@ -16,7 +16,7 @@ The Features of This FirebaseSocialMedia Application is :
 13. Publish Post with Notification
 14. Post List with Search
 15. Other User's Profile
-16.Edit, Delete, Share Posts
+16. Edit, Delete, Share Posts
 17. Like, Comment Posts
-18.Likes and Comments List
-19.Notifications Screen
+18. Likes and Comments List
+19. Notifications Screen
